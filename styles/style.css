@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    /*Box model stuff*/
+    margin: 0px;
+    padding: 0px;
+    /*Typography stuff*/
+    font-size: 1em;
+}
+
+html,
+body {
+    /*Box model stuff*/
+    min-height: 100vh;
+    background-color: darkgray;
+    /*Typography stuff*/
+    font-family: var(--fonte1);
+}
+
+header {
+    /*Box model stuff*/
+    background-color: black;
+    /*Typography stuff*/
+    text-align: center;
+    color: white;
+}
+
+header>h1 {
+    /*Box model stuff*/
+    padding-top: 50px;
+    /*Typography stuff*/
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+
+header>p {
+    /*Box model stuff*/
+    padding-bottom: 50px;
+}
+
+a {
+    /*Typography stuff*/
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    /*Typography stuff*/
+    text-decoration: underline;
+}
+
+section {
+    /*Box model stuff*/
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    padding-top: 10vh;
+    /*Typography stuff*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+    /*Miscellaneous*/
+    line-height: 2em;
+}
+
+section>p {
+    /*Box model stuff*/
+    padding-bottom: 2em;
+}
+
+#img01 {
+    /*Box model stuff*/
+    background-image: url('../images/background001.jpg');
+    background-position: right center;
+}
+
+#img02 {
+    /*Box model stuff*/
+    background-image: url('../images/background002.jpg');
+    background-position: right center;
+}
+
+.normal {
+    /*Box model stuff*/
+    background-color: white;
+    /*Typography stuff*/
+    color: black;
+}
+
+.imagem {
+    /*Box model stuff*/
+    background-attachment: fixed;
+    background-color: #464646;
+    background-size: cover;
+    /*Typography stuff*/
+    color: white;
+    /*Miscellaneous*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+.imagem>p {
+    /*Display stuff*/
+    display: inline-block;
+    /*Box model stuff*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    /*Typography stuff*/
+    text-shadow: 1px 1px 0px black;
+}
+
+footer {
+    /*Box model stuff*/
+    padding: 10px;
+    background-color: black;
+    /*Typography stuff*/
+    text-align: center;
+    color: white;
+}
